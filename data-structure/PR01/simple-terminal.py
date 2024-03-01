@@ -1,6 +1,6 @@
 stack = []
 while(1):
-    print(stack)
+    # print(stack)
     cmd = input()
     s = cmd.split()
     ord = s[0]
@@ -24,3 +24,6 @@ while(1):
         case "rm":
             a = int(s[1])
             del stack[a]
+print(len(stack))
+for x in stack:
+    print(x)

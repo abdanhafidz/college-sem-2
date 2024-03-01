@@ -6,7 +6,7 @@ def solve(y,x):
     for _ in range(j):
         m,k = map(int,input().split())
         parking.append((m,k))
-        if(k<m):
+        if(k<y):
             parking.pop()
     if(len(parking)<x):
         print("Pika Pika!")

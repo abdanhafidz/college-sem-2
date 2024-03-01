@@ -20,6 +20,6 @@ for _ in range(n):
         stack = [k*int(s[1]) for k in stack ]
     elif(s[0] == "dex"):
         stack = [k-int(s[1]) for k in stack ]
-
+        
     
 

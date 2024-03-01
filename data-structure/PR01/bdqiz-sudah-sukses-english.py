@@ -13,13 +13,13 @@ while(1):
                 status = 1
         elif(msg == "CURI"):
             if(status == 1):
-                if(not toko2):
-                     print("TOKO 2 KOSONG")
+                if(not toko1):
+                     print("TOKO 1 KOSONG")
                 else:
                     toko1.append(toko2.pop())
             elif(status == 2):
-                 if(not toko1):
-                     print("TOKO 1 KOSONG")
+                 if(not toko2):
+                     print("TOKO 2 KOSONG")
                  else:
                       toko2.append(toko1.pop())
         elif(msg == "PESAN" and status == 2):
