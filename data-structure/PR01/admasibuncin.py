@@ -1,4 +1,4 @@
-# awas kau kalau nyontek ya
+
 stack = []
 n = int(input())
 while(n):

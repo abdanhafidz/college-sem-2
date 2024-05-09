@@ -12,7 +12,6 @@ def solve(y,x):
         print("Pika Pika!")
     else:
         print("Pika Zzz")
-while(T):
-    T-=1
+for _ in range(T):
     y,x= map(int,input().split())
     solve(y,x)
