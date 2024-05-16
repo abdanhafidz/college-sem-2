@@ -1,2 +1,6 @@
-p = [1,2,3,4,5]
-print(p[0:4])
+adj = [ []*4*4]
+
+adj[1].append(2)
+adj[1].append(3)
+adj[2].append(2)
+print(adj)

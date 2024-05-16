@@ -1,0 +1,1 @@
+{"name":"Local: dfs","url":"c:\\Users\\asus\\OneDrive\\Documents\\kuliah-sem2\\data-structure\\05\\dfs.py","tests":[{"id":1715823238104,"input":"8 7\n0 1\n1 2\n1 3\n3 4\n1 5\n5 6\n6 7\n0","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\asus\\OneDrive\\Documents\\kuliah-sem2\\data-structure\\05\\dfs.py","group":"local","local":true}
