@@ -1,0 +1,29 @@
+1: function DIJKSTRA(s) 2: dist ← new integer[V +1]
+3:	visited ← new boolean[V +1]
+4:	pred ← new integer[V +1]
+5:	FILLARRAY(dist,∞)
+6:	FILLARRAY(visited, false)
+7:	FILLARRAY(pred,−1)
+8:	dist[s] ← 0
+9:	while true do	. Perulangan ini akan diakhiri dengan break
+10:	u ← −1
+11:	minDist ← ∞
+12:		for i ← 1, V do	. Cari node yang belum dikunjungi dan memiliki dist terkecil
+13:	if (not visited[i])∧(dist[i] < minDist) then
+14:	u ← i
+15:	minDist ← dist[i]
+16:	end if
+17:	end for
+18:	if (u = −1)∨ISINFINITE(dist[u]) then
+19:		break	. Akhiri perulangan while
+20:	end if
+21:	visited[u] ← true
+22:		for v ∈ ad j(u) do	. Lakukan relax untuk semua tetangga u
+23:	if dist[v] > dist[u]+w[u][v] then
+24:	dist[v] = dist[u]+w[u][v]
+25:	pred[v] = u
+26:	end if
+27:	end for
+28:	end while
+29:	return dist
+30: end function	. Kembalikan tabel shortest path yang bermula dari s

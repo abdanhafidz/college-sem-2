@@ -1,0 +1,11 @@
+1: function KRUSKAL(edgeList)
+2:	    INITIALIZEDISJOINTSET()
+3:	SORT(edgeList)	. Urutkan berdasarkan bobotnya
+4:	for hu,vi ∈ edgeList do
+5:	    if not CHECK(u,v) then 6:	cost ← cost +w[u][v]
+7:	    JOIN(u, v)
+8:	end if
+9:	end for
+10:	return cost
+11: end function
+
